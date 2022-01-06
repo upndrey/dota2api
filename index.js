@@ -17,8 +17,10 @@ Dota.prototype.init = async function() {
     // let result = await this.API(this.GET_MATCH_BY_ID, 6362760250);
     // console.log(result);
     
-    let response = await fetch("https://api.steampowered.com/IDOTA2Match_6362662278/GetMatchDetails/v1");
-    let result = await response.json();
+    let response = await fetch("https://api.steampowered.com/IDOTA2Match_570/GetMatchDetails/v1/?key=C0969B5252B4EFA4D1E814E00BD52C47&match_id=6362662278",{
+        mode: "no-cors"
+    });
+    let result = await response;
     console.log(result);
     //this.generateResult(result);
 };
