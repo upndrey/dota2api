@@ -17,7 +17,7 @@ Dota.prototype.init = async function() {
     // let result = await this.API(this.GET_MATCH_BY_ID, 6362760250);
     // console.log(result);
     
-    let response = await fetch("http://api.steampowered.com/IDOTA2Match_6362662278/GetMatchDetails/v1");
+    let response = await fetch("https://api.steampowered.com/IDOTA2Match_6362662278/GetMatchDetails/v1");
     let result = await response.json();
     console.log(result);
     //this.generateResult(result);
